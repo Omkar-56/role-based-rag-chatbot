@@ -1,0 +1,18 @@
+roles:
+  employee:
+    allowed_departments: ["general"]
+
+  hr:
+    allowed_departments: ["hr", "general"]
+
+  finance:
+    allowed_departments: ["finance"]
+
+  marketing:
+    allowed_departments: ["marketing"]
+
+  engineering:
+    allowed_departments: ["engineering"]
+
+  c_level:
+    allowed_departments: ["finance", "hr", "marketing", "engineering", "general"]

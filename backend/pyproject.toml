@@ -15,4 +15,10 @@ dependencies = [
   "passlib[bcrypt]",
   "python-multipart",
   "pydantic-settings",
+  "chromadb",
+  "pypdf",
+  "python-docx",
+  "pandas>=2.3.3",
+  "unstructured>=0.18.27",
+  "markdown>=3.10",
 ]
