@@ -1,24 +1,34 @@
 [project]
-name = "backend"
+name = "role-based-rag-chatbot"
 version = "0.1.0"
-description = "Add your description here"
+description = "Role-based RAG chatbot using FastAPI, vector search, and YAML-driven access control"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10,<3.13"
+
 dependencies = [
+  # API
   "fastapi",
   "uvicorn[standard]",
+
+  # RAG / NLP
   "langchain",
   "langchain-community",
+  "langchain-core",
+  "langchain-text-splitters",
   "chromadb",
   "sentence-transformers",
+
+  # Data processing
+  "pandas>=2.1",
+  "pypdf",
+  "python-docx",
+  "unstructured",
+  "markdown",
+
+  # Auth & Config
   "python-jose[cryptography]",
   "passlib[bcrypt]",
   "python-multipart",
   "pydantic-settings",
-  "chromadb",
-  "pypdf",
-  "python-docx",
-  "pandas>=2.3.3",
-  "unstructured>=0.18.27",
-  "markdown>=3.10",
+  "pyyaml"
 ]
