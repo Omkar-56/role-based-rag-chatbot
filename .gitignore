@@ -3,11 +3,21 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
 .venv/
-.env
+
 
 # Vector DB
 chroma_db/
+vector_db/
+.cache/
+*.log
 
 # OS
 .DS_Store
@@ -20,3 +30,4 @@ dist/
 #other
 DS-RPC-01/
 .idea/
+data/
