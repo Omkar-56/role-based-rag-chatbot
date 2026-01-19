@@ -25,6 +25,11 @@ venv/
 env/
 ENV/
 
+#other
+DS-RPC-01/
+.idea/
+data/
+
 # Python tooling
 .python-version
 .pytest_cache/
