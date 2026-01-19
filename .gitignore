@@ -1,33 +1,106 @@
+# ============================
+# Environment / Secrets
+# ============================
+.env
+*.key
+*.pem
+
+# ============================
 # Python
+# ============================
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.py[oc]
+*.so
+*.egg-info/
+.eggs/
+.dist-info/
 build/
 dist/
-wheels/
-*.egg-info
 
 # Virtual environments
 .venv/
+venv/
+env/
+ENV/
 
+# Python tooling
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Vector DB
-chroma_db/
+# Jupyter
+.ipynb_checkpoints/
+
+# ============================
+# uv / Lock Files
+# ============================
+uv.lock
+
+# ============================
+# ML / Vector DB / Models
+# ============================
 vector_db/
+chroma_db/
+*.sqlite3
+*.db
+models/
+checkpoints/
+cache/
+
+# HuggingFace cache (Windows + Linux)
 .cache/
-*.log
+hf_cache/
+huggingface/
 
-# OS
-.DS_Store
-Thumbs.db
+# ============================
+# Uploaded / Generated Files
+# ============================
+uploads/
+tmp/
+logs/
 
-# Node
+# ============================
+# Node / React
+# ============================
 node_modules/
 dist/
+build/
+.vite/
+.next/
+.out/
 
-#other
-DS-RPC-01/
+# ============================
+# Testing / Debug
+# ============================
+coverage/
+test-results/
+playwright-report/
+
+# ============================
+# IDE / OS
+# ============================
+.vscode/
 .idea/
-data/
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================
+# LangSmith / Telemetry
+# ============================
+.langsmith/
+
+# ============================
+# Misc
+# ============================
+*.log
+*.tmp
+*.lock

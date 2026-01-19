@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 import random
 
 DB_DIR = "vector_db"
@@ -14,7 +14,7 @@ db = Chroma(
 )
 
 # Fetch random samples
-results = db.similarity_search("policy", k=5)
+results = db.similarity_search("policy", k=5, )
 
 for r in results:
     print("\n----------------")
