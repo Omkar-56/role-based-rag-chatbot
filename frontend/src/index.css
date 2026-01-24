@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background-color: #181818;
+
+  color: #e5e7eb;
+  font-family: system-ui, sans-serif;
+}
+
+input, textarea, button {
+  background-color: #202020;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #202020;
+  color: #e5e7eb;
+}
+
+.card {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.sidebar {
+  background-color: #181818;
+  padding: 16px;
+  min-height: 100vh;
+  border-right: #e5e7eb;
+  border-width: 10px;
+}
+
+.tab {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.tab:hover {
+  background-color: #1e293b;
+}
+
+/* Chat UI Dark Overrides
+
+
+.rce-mbox-text {
+  background-color: #202020;
+
+  color: #e5e7eb !important;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.rce-mbox-title {
+  background-color: #202020 !important;
+  color: #93c5fd !important;
+  font-weight: 600;
+}
+
+.rce-mbox-time {
+  color: #64748b !important;
+}
+
+.rce-mbox {
+  background-color: #202020 !important;
+  border-radius: 10px;
+}
+
+.rce-input {
+  background-color: #202020 !important;
+  color: #e5e7eb !important;
+  width: 300px;
+} */
